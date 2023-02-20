@@ -13,7 +13,7 @@ from sklearn.ensemble import RandomForestClassifier
 #Diabetes Prediction
 
 #loading the Diabetes dataset
-df2=pd.read_csv("diabetes(1).csv")
+df2=pd.read_csv("diabetes.csv")
 #cleaning the data by dropping unneccessary column and dividing the data as features(x2) & target(y2)
 x2=df2.iloc[:,[1,4,5,7]].values
 x2=np.array(x2)
