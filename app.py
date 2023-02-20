@@ -1,16 +1,15 @@
 import streamlit as st
 rad=st.sidebar.radio("Navigation Menu",["Home","Diabetes"])
+if rad=="Home":
+    st.title("Diabetes Predictions App")
+    st.image("medical.jpg")import sklearn
+    st.text("Diabetes Prediction")
+import sklearn
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-#Home Page 
 
-#displays all the available disease prediction options in the web app
-if rad=="Home":
-    st.title("Diabetes Predictions App")
-    st.image("medical.jpg")
-    st.text("Diabetes Prediction")
 #Diabetes Prediction
 
 #loading the Diabetes dataset
