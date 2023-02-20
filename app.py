@@ -2,20 +2,19 @@ import streamlit as st
 rad=st.sidebar.radio("Navigation Menu",["Home","Diabetes"])
 import numpy as np
 import pandas as pd
-import plotly.express as px
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 #Home Page 
 
 #displays all the available disease prediction options in the web app
 if rad=="Home":
-    st.title("Medical Predictions App")
-    st.image("/content/medical.jpg")
+    st.title("Diabetes Predictions App")
+    st.image("medical.jpg")
     st.text("Diabetes Prediction")
 #Diabetes Prediction
 
 #loading the Diabetes dataset
-df2=pd.read_csv("/content/diabetes (1).csv")
+df2=pd.read_csv("diabetes (1).csv")
 #cleaning the data by dropping unneccessary column and dividing the data as features(x2) & target(y2)
 x2=df2.iloc[:,[1,4,5,7]].values
 x2=np.array(x2)
