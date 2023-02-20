@@ -2,7 +2,7 @@ import streamlit as st
 rad=st.sidebar.radio("Navigation Menu",["Home","Diabetes"])
 if rad=="Home":
     st.title("Diabetes Predictions App")
-    st.image("medical.jpg")import sklearn
+    st.image("medical.jpg")
     st.text("Diabetes Prediction")
 import sklearn
 import numpy as np
