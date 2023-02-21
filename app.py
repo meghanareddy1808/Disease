@@ -3,7 +3,6 @@ rad=st.sidebar.radio("Navigation Menu",["Home","Diabetes"])
 if rad=="Home":
     st.title("Diabetes Predictions App")
     st.image("medical.jpg")
-    st.text("Diabetes Prediction")
 import sklearn
 import numpy as np
 import pandas as pd
@@ -44,7 +43,7 @@ if rad=="Diabetes":
     
     #prediction part predicts whether the person is affected by Diabetes or not by the help of features taken as input
     #on the basis of prediction the results are displayed
-    if st.button("Predict"):
+    if st.button("Result"):
         if prediction2==1:
             st.warning("Might Be Affected By Diabetes")
         elif prediction2==0:
