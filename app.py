@@ -29,7 +29,8 @@ model2.fit(x2_train,y2_train)
 
 #heading over to the Diabetes section
 if rad=="Diabetes":
-    st.header("Know If You Are Affected By Diabetes")
+    st.header("Diabetes Check")
+    st.image("medical.jpg")
     st.write("All The Values Should Be In Range Mentioned")
     #taking the 4 most important features as input as features -> Glucose (glucose), Insulin (insulin), Body Mass Index-BMI (bmi), Age (age)
     #a min value (min_value) & max value (max_value) range is set so that user can enter value within that range
